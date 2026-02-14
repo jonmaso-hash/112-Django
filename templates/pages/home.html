@@ -1,14 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css'}">
+<script>
+    console.log("internal js")
+</script>
+{% endblock %}
+
+{% block content %}
+    <h1>Home Page using Jina tags!</h1>
     <div>
-        <h1>First Home Page on Django</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorum eius modi vero omnis quos perspiciatis non exercitationem sunt, asperiores incidunt harum, accusantium doloremque iste ratione iusto sit quidem maiores.</p>
+        <img src="https://picsum.photos/600/300" alt="Picsum random photo"">
     </div>
-</body>
-</html>
+    <p class="container section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos deleniti vero beatae dolore cupiditate. Consectetur possimus dolores quaerat eligendi enim delectus, doloremque temporibus porro dolorum, perferendis unde quo ipsum quis.</p>
+{% endblock %}
+
+

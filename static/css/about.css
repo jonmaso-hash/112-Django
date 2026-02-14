@@ -1,0 +1,14 @@
+.body-css{
+    background-color: black;
+}
+
+.custom-p{
+    background-color: blue;
+}
+
+.photos{
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+
