@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/home.css'}">
+<script>
+    console.log("internal js")
+</script>
+{% endblock %}
+
+{% block content %}
+    <h1>Home Page using Jina tags!</h1>
+    <div>
+        <img src="https://picsum.photos/600/300" alt="Picsum random photo"">
+    </div>
+    <p class="container section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos deleniti vero beatae dolore cupiditate. Consectetur possimus dolores quaerat eligendi enim delectus, doloremque temporibus porro dolorum, perferendis unde quo ipsum quis.</p>
+{% endblock %}
+
+
