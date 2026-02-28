@@ -1,8 +1,7 @@
 .container{
-    display: flex;
     text-align: center;
 }
 
-.section{
-    background-color: black;
+body{
+    background-color: slategrey;
 }
