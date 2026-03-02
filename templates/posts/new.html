@@ -1,8 +1,14 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{% load static %}
+
 
 {% block title %}
     Create New post
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/new.css' %}">
 {% endblock %}
 
 {% block content %}

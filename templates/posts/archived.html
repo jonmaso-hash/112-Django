@@ -2,17 +2,17 @@
 {% load static %}
 
 {% block title %}
-    Drafts
+   Archived Posts
 {% endblock %}
 
 {% block css %}
-<link rel="stylesheet" href="{% static 'css/drafts.css' %}">
+<link rel="stylesheet" href="{% static 'css/archived.css' %}">
 {% endblock %}
 
 {% block content %}
-    <h1>Drafts</h1>
+    <h1>Archived Posts</h1>
     <ul>
-        {% for post in drafts %}
+        {% for post in archives %}
         <li>
             <h4>{{ post.title }}</h4>
             <span>Status: <strong> {{post.status}}</strong></span>
